@@ -45,3 +45,18 @@ def makeIncreaser(more: Int) = (x: Int) => x + more
 val inc1 = makeIncreaser(1)
 
 val inc999 = makeIncreaser(999)
+
+inc1(10)
+
+inc999(10)
+
+def echo (args : String*) = for (arg <- args) println(arg)
+
+echo()
+echo("scsdv")
+echo("sdcvcvsdv0", "sdcvsdv", "sdcvvcsadv")
+
+val arr = Array("What's", "up", "doc?")
+echo(arr: _*)
+
+def speed(distance: Float, time: Float): Float = distance / time
